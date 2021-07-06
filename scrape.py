@@ -109,7 +109,7 @@ if __name__ == "__main__":
     opts.add_argument("--headless")
 
     #Initiate Chrome
-    driver = webdriver.Chrome("chromedriver.exe", options=opts)
+    driver = webdriver.Chrome("/mnt/sda1/chromedriver", options=opts)
     print("Chrome initiated, scraping table")
     # Once Chrome is started, ensure closure on error
     try:
