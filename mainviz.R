@@ -156,6 +156,6 @@ ggplot(pred_dates, aes(x = date_long, group = party, colour = party, fill = part
   geom_text(aes(label = final_label, y = final_val), na.rm = T, size = rel(3)) +
   scale_fill_manual(values = c("#483ae8", "#60d662", "#f23809", "#f2a809", "#f2e209"), labels=c("Conservative", "Greens", "Labour", "Liberal Democrats", "SNP")) +
   scale_colour_manual(values = c("#483ae8", "#60d662", "#f23809", "#f2a809", "#f2e209"), guide="none") +
-  labs(title = "The I's Poll of Polls")
+  labs(title = "i's Poll of Polls")
 
 save_inews("pgraph.png")
