@@ -8,7 +8,7 @@ The program ([poll_scrape.py](https://github.com/tomsaunders98/PollTracker/blob/
 The tracker is written in Python and uses Selenium to download polls and Pandas to format them. It runs daily on a Raspberry Pi 4.
 
 ### The Model
-The model [poll_model.R(https://github.com/tomsaunders98/PollTracker/blob/master/poll_model.R)] is written in R, using the brms package. The actual model specifications are based on a poll model designed by [Jack Bailey](https://github.com/jackobailey/poll_tracker). The model provides an estimates for each poll. On days where more than one poll was conducted, the average of the two estimates are taken.
+The model [poll_model.R](https://github.com/tomsaunders98/PollTracker/blob/master/poll_model.R) is written in R, using the brms package. The actual model specifications are based on a poll model designed by [Jack Bailey](https://github.com/jackobailey/poll_tracker). The model provides an estimates for each poll. On days where more than one poll was conducted, the average of the two estimates are taken.
 
 The model uses a dirichlet distribution to evaluate the topline estimates for each party. It weights each poll by a few factors: The date of poll, the number of people surveyed and the polling organisation which conducted the poll.
 The weights for each polling organisation, or the "house effect", are not chosen in advance or static values. They change over time and adjust based on whether a polling organisation tends to overestimate a certain party's support compared to the baseline.
